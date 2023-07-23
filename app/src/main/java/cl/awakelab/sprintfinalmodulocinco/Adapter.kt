@@ -12,7 +12,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     //Lista
     var productos = mutableListOf<Producto>()
-
+    private var itemClickListener: OnItemClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -33,6 +33,9 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
         notifyDataSetChanged()
 
     }
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.itemClickListener = listener
+    }
 
     class ViewHolder(val binding: ItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(producto: Producto) {
@@ -50,5 +53,8 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
         }
 
+    }
+    interface OnItemClickListener {
+        fun onItemClick(producto: Producto)
     }
 }

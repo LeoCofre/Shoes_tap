@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import cl.awakelab.sprintfinalmodulocinco.databinding.FragmentRecyclerBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -17,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [RecyclerFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class RecyclerFragment : Fragment() {
+class RecyclerFragment : Fragment(), Adapter.OnItemClickListener {
     // TODO: Rename and change types of parameters
     lateinit var binding: FragmentRecyclerBinding
     private var param1: String? = null
@@ -69,4 +72,10 @@ class RecyclerFragment : Fragment() {
                 }
             }
     }
+
+    override fun onItemClick(producto: Producto) {
+        TODO("Not yet implemented")
+    }
+
+
 }

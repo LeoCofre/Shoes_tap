@@ -45,6 +45,7 @@ class DetailFragment : Fragment() {
         for (d in dataProductos){
             binding.tvNombre.text = d.nombre
             binding.imageView.load(d.imgUrl)
+            binding.tvDescripcion.text = d.descripcion
             binding.tvTotal.text = d.precio.toString()
         }
     }
