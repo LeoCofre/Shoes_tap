@@ -37,7 +37,7 @@
                 android:layout_height="38dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Nombre Producto"
+                android:text="@+id/tvNombreProducto"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
                 android:layout_height="38dp"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
-                android:text="Descripcion Producto"
+                android:text="@string/descripcion_producto"
                 app:layout_constraintEnd_toEndOf="@+id/tvNombre"
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="@+id/tvNombre"
@@ -59,7 +59,7 @@
                 android:layout_width="66dp"
                 android:layout_height="27dp"
                 android:layout_marginTop="44dp"
-                android:text="Números"
+                android:text="@string/n_meros"
                 app:layout_constraintEnd_toStartOf="@+id/radioGroupNumeros"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/tvDescripcion"
@@ -85,35 +85,35 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="35" />
+                        android:text="@string/_35" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbDos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="36" />
+                        android:text="@string/_36" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbTres"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="37" />
+                        android:text="@string/_37" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbCuatro"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="38" />
+                        android:text="@string/_38" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbCinco"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="39" />
+                        android:text="@string/_39" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
 
@@ -122,7 +122,7 @@
                 android:layout_width="67dp"
                 android:layout_height="21dp"
                 android:layout_marginTop="16dp"
-                android:text="Colores"
+                android:text="@string/colores"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tvNumeros"
                 app:layout_constraintTop_toBottomOf="@+id/tvNumeros"
@@ -145,24 +145,28 @@
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgUno"
+                        android:backgroundTint="@color/celeste"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgDos"
+                        android:backgroundTint="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgTres"
+                        android:backgroundTint="#E6A4A4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgCuatro"
+                        android:backgroundTint="#62E368"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />

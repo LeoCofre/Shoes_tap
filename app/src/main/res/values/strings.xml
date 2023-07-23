@@ -2,4 +2,18 @@
     <string name="app_name">Sprint Final Modulo Cinco</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="precio">Precio</string>
+    <string name="nombre_producto">Nombre Producto</string>
+    <string name="salir">Salir</string>
+    <string name="total">Total</string>
+    <string name="vaciar_carro">Vaciar Carro</string>
+    <string name="tu_carrito">Tu Carrito</string>
+    <string name="descripcion_producto">Descripcion Producto</string>
+    <string name="n_meros">Números</string>
+    <string name="_35">35</string>
+    <string name="_36">36</string>
+    <string name="_37">37</string>
+    <string name="_38">38</string>
+    <string name="_39">39</string>
+    <string name="colores">Colores</string>
 </resources>

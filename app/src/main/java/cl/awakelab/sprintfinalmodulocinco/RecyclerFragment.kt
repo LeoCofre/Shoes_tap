@@ -39,7 +39,6 @@ class RecyclerFragment : Fragment() {
         binding = FragmentRecyclerBinding.inflate(layoutInflater)
         initAdapter()
         return binding.root
-        //return inflater.inflate(R.layout.fragment_recycler, container, false)
 
 
     }

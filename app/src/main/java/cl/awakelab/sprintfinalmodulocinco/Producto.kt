@@ -17,7 +17,7 @@ class DataProductos {
                 Producto(
                     "Nike Air Max Plus",
                     196990,
-                    "https://www.nike.cl/fb2557-200-nike-air-max-plus/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/770638-1000-1000/FB2557_200_A_PREM.jpg?v=638253938579770000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -25,7 +25,7 @@ class DataProductos {
                 Producto(
                     "Nike Air Force 1 LX",
                     132990,
-                    "https://www.nike.cl/dz2789-200-nike-air-force-1-lx/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/724895-1000-1000/DZ2789_200_A_PREM.jpg?v=638241066996300000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -33,15 +33,15 @@ class DataProductos {
                 Producto(
                     "Nike Zoom Bella 6",
                     87990,
-                    "https://www.nike.cl/dr5720-500-nike-zoom-bella-6/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/723151-1000-1000/DR5720_500_A_PREM.jpg?v=638241046121830000",
                     "Zapatillas para Mujer"
                 )
             )
             add(
                 Producto(
                     "Nike Court Legacy Lift",
-                    99990,
-                    "https://www.nike.cl/fd0558-100-nike-court-legacy-lift/p",
+                    92990,
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/722672-1000-1000/DM7590_103_A_PREM.jpg?v=638241040457100000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -49,7 +49,7 @@ class DataProductos {
                 Producto(
                     "Nike Air Max Excee",
                     106990,
-                    "https://www.nike.cl/cd5432-127-nike-air-max-excee/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/720862-1000-1000/CD5432_127_A_PREM.jpg?v=638241018670930000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -57,7 +57,7 @@ class DataProductos {
                 Producto(
                     "Nike Air Force 1 07 Mid",
                     126990,
-                    "https://www.nike.cl/dd9625-103-nike-air-force-1-07-mid/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/721774-1000-1000/DD9625_103_A_PREM.jpg?v=638241029675430000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -65,7 +65,7 @@ class DataProductos {
                 Producto(
                     "Air Jordan 1 Mid",
                     142990,
-                    "https://www.nike.cl/bq6472-186-air-jordan-1-mid/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/714243-1000-1000/BQ6472_186_A_PREM.jpg?v=638193274840870000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -73,7 +73,7 @@ class DataProductos {
                 Producto(
                     "Air Jordan 1 Mid SE",
                     137990,
-                    "https://www.nike.cl/dv0427-102-air-jordan-1-mid-se/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/714356-1000-1000/DV0427_102_A_PREM.jpg?v=638193276169270000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -81,7 +81,7 @@ class DataProductos {
                 Producto(
                     "Air Jordan 1 Low SE",
                     116990,
-                    "https://www.nike.cl/dv0426-200-air-jordan-1-low-se/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/714344-1000-1000/DV0426_012_A_PREM.jpg?v=638193276025070000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -89,7 +89,7 @@ class DataProductos {
                 Producto(
                     "Air Jordan 1 Low",
                     112990,
-                    "https://www.nike.cl/dc0774-416-air-jordan-1-low/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/711402-1000-1000/DV0426_200_A_PREM.jpg?v=638187438546870000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -97,7 +97,7 @@ class DataProductos {
                 Producto(
                     "Nike SB Zoom Blazer Mid",
                     106990,
-                    "https://www.nike.cl/dv5467-001-nike-sb-zoom-blazer-mid/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/714383-1000-1000/DV5467_001_A_PREM.jpg?v=638193276508470000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -105,7 +105,7 @@ class DataProductos {
                 Producto(
                     "Air Jordan 1 Mid SE",
                     137990,
-                    "https://www.nike.cl/dv0427-100-air-jordan-1-mid-se/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/711413-1000-1000/DV0427_100_A_PREM.jpg?v=638187438736600000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -113,7 +113,7 @@ class DataProductos {
                 Producto(
                     "W Nike Pegasus 40",
                     129990,
-                    "https://www.nike.cl/dv3854-102-nike-pegasus-40/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/673713-1000-1000/FJ2974_001_A_PREM.jpg?v=638158949356330000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -121,7 +121,7 @@ class DataProductos {
                 Producto(
                     "Nike Gamma Force",
                     94990,
-                    "https://www.nike.cl/dx9176-100-nike-gamma-force/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/673554-1000-1000/DX9176_100_A_PREM.jpg?v=638158947193630000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -129,7 +129,7 @@ class DataProductos {
                 Producto(
                     "Nike Gamma Force",
                     94990,
-                    "https://www.nike.cl/dx9176-102-nike-gamma-force/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/673580-1000-1000/DX9176_102_A_PREM.jpg?v=638158947574800000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -137,7 +137,7 @@ class DataProductos {
                 Producto(
                     "Nike Vaporfly 3",
                     2269990,
-                    "https://www.nike.cl/dv4130-600-nike-vaporfly-3/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/673208-1000-1000/DV4130_600_A_PREM.jpg?v=638158942349200000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -145,7 +145,7 @@ class DataProductos {
                 Producto(
                     "W Air Jordan 3 Retro",
                     204990,
-                    "https://www.nike.cl/ck9246-136-air-jordan-3-retro/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/673208-1000-1000/DV4130_600_A_PREM.jpg?v=638158942349200000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -153,7 +153,7 @@ class DataProductos {
                 Producto(
                     "Nike Free Metcon 5",
                     124990,
-                    "https://www.nike.cl/dv3950-001-nike-free-metcon-5/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/673129-1000-1000/DV3950_001_A_PREM.jpg?v=638158941296430000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -161,7 +161,7 @@ class DataProductos {
                 Producto(
                     "Nike City Classic",
                     126990,
-                    "https://www.nike.cl/dq5601-001-nike-city-classic/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/671415-1000-1000/DQ5601_001_A_PREM.jpg?v=638151039609100000",
                     "Zapatillas para Mujer"
                 )
             )
@@ -169,7 +169,7 @@ class DataProductos {
                 Producto(
                     "Nike City Classic",
                     126990,
-                    "https://www.nike.cl/dq5601-710-nike-city-classic/p",
+                    "https://nikeclprod.vteximg.com.br/arquivos/ids/685783-1000-1000/DQ5601_710_A_PREM.jpg?v=638162156710830000",
                     "Zapatillas para Mujer"
                 )
             )
