@@ -30,7 +30,7 @@
         tools:layout="@layout/fragment_carrito" />
     <fragment
         android:id="@+id/item"
-        android:name="cl.awakelab.sprintfinalmodulocinco.Item"
+        android:name="cl.awakelab.sprintfinalmodulocinco.CarritoFragment"
         android:label="fragment_item"
-        tools:layout="@layout/fragment_item" />
+        tools:layout="@layout/fragment_carrito" />
 </navigation>
