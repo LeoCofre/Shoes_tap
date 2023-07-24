@@ -5,7 +5,7 @@
     android:id="@+id/constraintDetail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailFragment">
+    tools:context=".vista.DetailFragment">
 
     <ImageView
         android:id="@+id/imageView"
@@ -29,7 +29,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
 
             <TextView
                 android:id="@+id/tvNombre"
@@ -38,6 +40,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="@+id/tvNombreProducto"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -58,17 +61,17 @@
                 android:id="@+id/tvNumeros"
                 android:layout_width="66dp"
                 android:layout_height="27dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="36dp"
                 android:text="@string/n_meros"
                 app:layout_constraintEnd_toStartOf="@+id/radioGroupNumeros"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.531"
                 app:layout_constraintStart_toStartOf="@+id/tvDescripcion"
                 app:layout_constraintTop_toBottomOf="@+id/tvDescripcion" />
 
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/radioGroupNumeros"
-                android:layout_width="307dp"
-                android:layout_height="55dp"
+                android:layout_width="249dp"
+                android:layout_height="49dp"
                 android:layout_marginTop="28dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.95"
@@ -76,43 +79,43 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvDescripcion">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbUno"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="0"
                         android:text="@string/_35" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbDos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="0"
                         android:text="@string/_36" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbTres"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="0"
                         android:text="@string/_37" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbCuatro"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="0"
                         android:text="@string/_38" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/rbCinco"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="0"
                         android:text="@string/_39" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
@@ -130,46 +133,46 @@
 
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/colorGroup"
-                android:layout_width="309dp"
-                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintStart_toEndOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/radioGroupNumeros">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgUno"
-                        android:backgroundTint="@color/celeste"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/celeste" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgDos"
-                        android:backgroundTint="@color/white"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="0"
+                        android:backgroundTint="@color/white" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgTres"
-                        android:backgroundTint="#E6A4A4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="0"
+                        android:backgroundTint="#E6A4A4" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/cgCuatro"
-                        android:backgroundTint="#62E368"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="0"
+                        android:backgroundTint="#62E368" />
                 </LinearLayout>
             </com.google.android.material.chip.ChipGroup>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -179,6 +182,7 @@
         android:layout_width="391dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
+        android:backgroundTint="#DCE3D4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -196,6 +200,7 @@
                 android:layout_marginTop="28dp"
                 android:gravity="center"
                 android:text="Precio"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

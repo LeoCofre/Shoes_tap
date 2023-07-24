@@ -1,10 +1,10 @@
-package cl.awakelab.sprintfinalmodulocinco
+package cl.awakelab.sprintfinalmodulocinco.vista
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import cl.awakelab.sprintfinalmodulocinco.R
 import cl.awakelab.sprintfinalmodulocinco.databinding.ItemBinding
 import coil.load
 

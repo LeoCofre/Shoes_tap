@@ -7,16 +7,16 @@
 
     <fragment
         android:id="@+id/recyclerFragment"
-        android:name="cl.awakelab.sprintfinalmodulocinco.RecyclerFragment"
+        android:name="cl.awakelab.sprintfinalmodulocinco.vista.ListFragment"
         android:label="fragment_recycler"
-        tools:layout="@layout/fragment_recycler" >
+        tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_recyclerFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="cl.awakelab.sprintfinalmodulocinco.DetailFragment"
+        android:name="cl.awakelab.sprintfinalmodulocinco.vista.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <action
@@ -25,12 +25,12 @@
     </fragment>
     <fragment
         android:id="@+id/carritoFragment"
-        android:name="cl.awakelab.sprintfinalmodulocinco.CarritoFragment"
+        android:name="cl.awakelab.sprintfinalmodulocinco.vista.CarritoFragment"
         android:label="fragment_carrito"
         tools:layout="@layout/fragment_carrito" />
     <fragment
         android:id="@+id/item"
-        android:name="cl.awakelab.sprintfinalmodulocinco.CarritoFragment"
+        android:name="cl.awakelab.sprintfinalmodulocinco.vista.CarritoFragment"
         android:label="fragment_item"
         tools:layout="@layout/fragment_carrito" />
 </navigation>

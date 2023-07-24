@@ -1,6 +1,5 @@
-package cl.awakelab.sprintfinalmodulocinco
+package cl.awakelab.sprintfinalmodulocinco.vista
 
-import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

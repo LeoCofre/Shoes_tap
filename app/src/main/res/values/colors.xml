@@ -5,6 +5,10 @@
     <color name="rosa">#ECA1A1</color>
     <color name="celeste">#4EA1E4</color>
     <color name="amarillo">#FFCA28</color>
+    <color name="verde">#24BA0A</color>
     <color name="lila">#BC24D6</color>
+    <color name="primary">#8bc34a</color>
+    <color name="primary_dark">#689f38</color>
+    <color name="accent">#b2ff59</color>
 
 </resources>

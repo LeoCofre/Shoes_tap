@@ -1,14 +1,12 @@
-package cl.awakelab.sprintfinalmodulocinco
+package cl.awakelab.sprintfinalmodulocinco.vista
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.fragment.findNavController
-import cl.awakelab.sprintfinalmodulocinco.databinding.FragmentRecyclerBinding
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import cl.awakelab.sprintfinalmodulocinco.databinding.FragmentListBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,12 +15,12 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [RecyclerFragment.newInstance] factory method to
+ * Use the [ListFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class RecyclerFragment : Fragment(), Adapter.OnItemClickListener {
+class ListFragment : Fragment(), Adapter.OnItemClickListener {
     // TODO: Rename and change types of parameters
-    lateinit var binding: FragmentRecyclerBinding
+    lateinit var binding: FragmentListBinding
     private var param1: String? = null
     private var param2: String? = null
 
@@ -39,7 +37,7 @@ class RecyclerFragment : Fragment(), Adapter.OnItemClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentRecyclerBinding.inflate(layoutInflater)
+        binding = FragmentListBinding.inflate(layoutInflater)
         initAdapter()
         return binding.root
 
@@ -51,6 +49,8 @@ class RecyclerFragment : Fragment(), Adapter.OnItemClickListener {
         val dataProducto = DataProductos.dataProductos
         adapter.setData(dataProducto)
         binding.recyclerView.adapter = adapter
+
+
     }
 
     companion object {
@@ -65,7 +65,7 @@ class RecyclerFragment : Fragment(), Adapter.OnItemClickListener {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            RecyclerFragment().apply {
+            ListFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
