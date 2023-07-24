@@ -1,4 +1,4 @@
-package cl.awakelab.sprintfinalmodulocinco.vista
+package cl.awakelab.sprintfinalmodulocinco.modelo
 
 data class Producto(
     val nombre: String,

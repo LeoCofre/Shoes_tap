@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import cl.awakelab.sprintfinalmodulocinco.R
 import cl.awakelab.sprintfinalmodulocinco.databinding.FragmentListBinding
+import cl.awakelab.sprintfinalmodulocinco.modelo.DataProductos
+import cl.awakelab.sprintfinalmodulocinco.modelo.Producto
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -76,14 +78,13 @@ class ListFragment : Fragment(), Adapter.ProductosCallBack {
             }
     }
 
-    fun onItemClick(producto: Producto) {
-        TODO("Not yet implemented")
-    }
+
     override fun showInfoFragmen(producto: Producto) {
         val bundle = Bundle()
         bundle.putString("nombre", producto.nombre)
         bundle.putString("url", producto.imgUrl)
         bundle.putString("precio", producto.precio.toString())
+        bundle.putString("descripcion", producto.descripcion)
         findNavController().navigate(R.id.action_recyclerFragment_to_detailFragment,bundle)
         Log.e("bind: ",producto.nombre )
 
