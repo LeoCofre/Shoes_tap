@@ -1,11 +1,13 @@
 package cl.awakelab.sprintfinalmodulocinco.vista
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.navigation.fragment.findNavController
+import cl.awakelab.sprintfinalmodulocinco.R
 import cl.awakelab.sprintfinalmodulocinco.databinding.FragmentListBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -18,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [ListFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ListFragment : Fragment(), Adapter.OnItemClickListener {
+class ListFragment : Fragment(), Adapter.ProductosCallBack {
     // TODO: Rename and change types of parameters
     lateinit var binding: FragmentListBinding
     private var param1: String? = null
@@ -48,6 +50,7 @@ class ListFragment : Fragment(), Adapter.OnItemClickListener {
         val adapter = Adapter()
         val dataProducto = DataProductos.dataProductos
         adapter.setData(dataProducto)
+        adapter.callback = this
         binding.recyclerView.adapter = adapter
 
 
@@ -73,9 +76,20 @@ class ListFragment : Fragment(), Adapter.OnItemClickListener {
             }
     }
 
-    override fun onItemClick(producto: Producto) {
+    fun onItemClick(producto: Producto) {
         TODO("Not yet implemented")
     }
+    override fun showInfoFragmen(producto: Producto) {
+        val bundle = Bundle()
+        bundle.putString("nombre", producto.nombre)
+        bundle.putString("url", producto.imgUrl)
+        bundle.putString("precio", producto.precio.toString())
+        findNavController().navigate(R.id.action_recyclerFragment_to_detailFragment,bundle)
+        Log.e("bind: ",producto.nombre )
+
+
+    }
+
 
 
 }

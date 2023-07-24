@@ -1,6 +1,7 @@
 package cl.awakelab.sprintfinalmodulocinco.vista
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +12,11 @@ import coil.load
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-
+/**
+ * A simple [Fragment] subclass.
+ * Use the [InfoFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
 
 
 class DetailFragment : Fragment() {
@@ -21,12 +26,14 @@ class DetailFragment : Fragment() {
 
     private var param1: String? = null
     private var param2: String? = null
+    private var param3: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            param1 = it.getString("nombre")
+            param2 = it.getString("url")
+            param2 = it.getString("precio")
         }
     }
 
@@ -35,9 +42,17 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentDetailBinding.inflate(LayoutInflater.from(activity))
-        val dataProductos = DataProductos.dataProductos
-        setComponent(dataProductos)
+       /* val dataProductos = DataProductos.dataProductos
+        setComponent(dataProductos)*/
+        initAdapter()
         return (binding.root)
+    }
+
+    private fun initAdapter() {
+       binding.tvNombre.text = "$param1"
+       binding.imageView.load(param2)
+       binding.tvTotal.text = "$param3"
+        Log.e("bind: ",param1.toString())
     }
 
     private fun setComponent(dataProductos: List<Producto>) {
