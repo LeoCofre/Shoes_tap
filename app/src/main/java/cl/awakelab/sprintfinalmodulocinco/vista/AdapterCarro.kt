@@ -43,7 +43,8 @@ class AdapterCarro : RecyclerView.Adapter<AdapterCarro.ViewHolder>() {
                 crossfade(true)
                 transformations(CircleCropTransformation())
             }
-            binding.tvPrecioCarro.text = "$" + producto.precio.toString()
+            binding.tvPrecioCarro.text =  producto.precio.toString()
+            binding.tvNombreCarro.text = producto.nombre
             binding.btnQuitarDelCarro.setOnClickListener {
                 callback?.eliminarItem(producto.nombre)
                 carroConProductos.removeAt(adapterPosition)

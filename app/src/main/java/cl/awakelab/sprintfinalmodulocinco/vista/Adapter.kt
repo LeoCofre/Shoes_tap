@@ -43,7 +43,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
                 placeholder(R.drawable.baseline_image_search_24)    // Imagen de carga mientras se carga la imagen real
                 error(R.drawable.baseline_image_not_supported_24)   // Imagen a mostrar en caso de error al cargar la imagen
 
-                binding.tvItem.text = producto.precio.toString()
+                binding.tvPrecioItem.text = producto.precio.toString()
                 binding.tvNombreProducto.text = producto.nombre
                 binding.cardItem.setOnClickListener {
 
