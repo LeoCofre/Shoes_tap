@@ -9,7 +9,7 @@ data class Producto(
 
 class DataProductos {
     companion object {
-        //fun getProductos(): List<Producto> {
+
         val dataProductos = mutableListOf<Producto>().apply {
 
 

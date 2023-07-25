@@ -194,7 +194,7 @@
             android:layout_height="96dp">
 
             <TextView
-                android:id="@+id/tvTotal"
+                android:id="@+id/tvPrecioDetalle"
                 android:layout_width="113dp"
                 android:layout_height="37dp"
                 android:layout_marginStart="16dp"
@@ -206,7 +206,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnVaciarCarrito"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -215,7 +215,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.687"
-                app:layout_constraintStart_toEndOf="@+id/tvTotal"
+                app:layout_constraintStart_toEndOf="@+id/tvPrecioDetalle"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView

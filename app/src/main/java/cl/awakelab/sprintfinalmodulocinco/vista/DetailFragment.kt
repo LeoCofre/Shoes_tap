@@ -56,7 +56,7 @@ class DetailFragment : Fragment() {
     private fun initAdapter() {
         binding.tvNombre.text = "$param1"
         binding.imageView.load(param2)
-        binding.tvTotal.text = "$param3"
+        binding.tvPrecioDetalle.text = "$param3"
         binding.tvDescripcion.text = "$param4"
         Log.e("bind: ", param1.toString())
     }
@@ -66,7 +66,7 @@ class DetailFragment : Fragment() {
             binding.tvNombre.text = d.nombre
             binding.imageView.load(d.imgUrl)
             binding.tvDescripcion.text = d.descripcion
-            binding.tvTotal.text = d.precio.toString()
+            binding.tvPrecioDetalle.text = d.precio.toString()
         }
     }
 

@@ -31,7 +31,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     fun setData(dataProductos: List<Producto>) {
         this.productos = dataProductos.toMutableList()
-
+        notifyDataSetChanged()
 
     }
 
@@ -47,7 +47,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
                 binding.tvNombreProducto.text = producto.nombre
                 binding.cardItem.setOnClickListener {
 
-                    callback?.showInfoFragmen(producto)
+                    callback?.showInfoFragment(producto)
 
                 }
             }
@@ -56,7 +56,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
     }
 
     interface ProductosCallBack {
-        fun showInfoFragmen(producto: Producto)
+        fun showInfoFragment(producto: Producto)
 
     }
 }

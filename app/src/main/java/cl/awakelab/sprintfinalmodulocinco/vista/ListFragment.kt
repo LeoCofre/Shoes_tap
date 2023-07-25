@@ -43,7 +43,7 @@ class ListFragment : Fragment(), Adapter.ProductosCallBack {
         // Inflate the layout for this fragment
         binding = FragmentListBinding.inflate(layoutInflater)
         initAdapter()
-        return binding.root
+        return (binding.root)
 
 
     }
@@ -53,7 +53,11 @@ class ListFragment : Fragment(), Adapter.ProductosCallBack {
         val dataProducto = DataProductos.dataProductos
         adapter.setData(dataProducto)
         adapter.callback = this
-        binding.recyclerView.adapter = adapter
+        binding.recyclerViewCarroNO.adapter = adapter
+
+        binding.btnIrCarrito.setOnClickListener{
+            findNavController().navigate(R.id.action_recyclerFragment_to_carritoFragment)
+        }
 
 
     }
@@ -79,14 +83,14 @@ class ListFragment : Fragment(), Adapter.ProductosCallBack {
     }
 
 
-    override fun showInfoFragmen(producto: Producto) {
+    override fun showInfoFragment(producto: Producto) {
         val bundle = Bundle()
         bundle.putString("nombre", producto.nombre)
         bundle.putString("url", producto.imgUrl)
         bundle.putString("precio", producto.precio.toString())
         bundle.putString("descripcion", producto.descripcion)
         findNavController().navigate(R.id.action_recyclerFragment_to_detailFragment,bundle)
-        Log.e("bind: ",producto.nombre )
+        Log.e("bundle: ",producto.nombre )
 
 
     }
